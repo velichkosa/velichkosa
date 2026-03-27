@@ -50,7 +50,6 @@ AI / LLM Systems · Fullstack Architecture · Data-Driven Automation
 - начни с каталога проектов
 - каждый проект описан через:
     - проблему → решение → архитектуру → эффект
-- выбирай системы по своей предметной области
 
 ---
 
@@ -130,7 +129,6 @@ This portfolio includes real-world production systems:
 - start with the Project Catalog
 - each project includes:
     - problem → solution → architecture → impact
-- focus on systems relevant to your domain
 
 ---
 

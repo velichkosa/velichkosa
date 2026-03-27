@@ -1,125 +1,74 @@
 # Smart Service
 
-> Платформа реального времени для управления транспортной логистикой и координации бригад
-
----
-
 <details open>
 <summary>🇷🇺 Русский</summary>
 
-### 🚀 Обзор
+> Платформа реального времени для управления транспортной логистикой и координации бригад
 
-**Smart Service** — распределенная система для управления транспортом и координации полевых бригад в реальном времени.
+## Обзор
 
-Платформа объединяет веб-интерфейс диспетчера и Telegram-интерфейс исполнителей, обеспечивая непрерывное управление
-задачами и синхронизацию статусов.
+Распределённая система, объединяющая веб-интерфейс диспетчера и Telegram-интерфейс исполнителей для непрерывного управления задачами и синхронизации статусов в реальном времени.
 
----
+## Проблема → Решение
 
-### 💡 Проблема
+| Проблема | Решение |
+|---|---|
+| Нет прозрачности загрузки транспорта | Централизованный дашборд с мониторингом флота |
+| Неэффективное распределение задач | Назначение и планирование в единой системе |
+| Разрозненные каналы коммуникации | Единый поток: веб-диспетчер ↔ Telegram-исполнитель |
+| Простой бригад и техники | Реальное время статусов и автоуведомления |
 
-- отсутствие прозрачности загрузки транспорта
-- неэффективное распределение задач
-- отсутствие контроля этапов выполнения
-- простой бригад и техники
-- разрозненные каналы коммуникации
+## Как это работает
 
----
-
-### ✅ Решение
-
-Платформа из двух ключевых модулей:
-
-**1. Модуль диспетчера (Web):**
-
-- мониторинг транспорта
-- назначение и планирование задач
-- контроль выполнения
-- визуализация загрузки
-
-**2. Модуль исполнителя (Telegram / WebApp):**
-
-- мгновенное получение задач
-- принятие в работу
-- пошаговое обновление статусов
-- передача данных обратно в систему
-
----
-
-### 🧩 Возможности
-
-- контроль жизненного цикла задач в реальном времени
-- двусторонняя коммуникация
-- мобильный доступ через Telegram
-- централизованный дашборд
-- синхронизация состояния системы
-- автоматические уведомления
-
----
-
-### ⚙️ Технологии
-
-**Backend:**  
-Python, Django DRF
-
-**Frontend:**  
-React, TypeScript
-
-**Интеграции:**  
-Aiogram (Telegram Bot API), RabbitMQ
-
-**Данные:**  
-PostgreSQL, Redis
-
----
-
-### 🏗️ Архитектура
-
-```text
-Диспетчер (Web)
-        ↓
-Backend (Django DRF)
-        ↓
-Очередь сообщений (RabbitMQ)
-        ↓
-Telegram Bot
-        ↓
-Исполнители
-        ↓
-Обновление статусов
-        ↓
-Dashboard
-````
-
----
-
-### Процесс работы
-
-1. Диспетчер создает задачу
+```
+1. Диспетчер создаёт задачу (Web)
 2. Исполнитель получает её в Telegram
 3. Обновляет этапы выполнения
 4. Статус мгновенно отображается в системе
+```
+
+## Модули
+
+**Модуль диспетчера (Web)**
+— мониторинг транспорта, назначение задач, контроль выполнения, визуализация загрузки
+
+**Модуль исполнителя (Telegram / WebApp)**
+— получение задач, принятие в работу, пошаговые статусы, обратная связь
+
+## Архитектура
+
+```
+Диспетчер (Web)
+    ↓
+Backend (Django DRF)
+    ↓
+Message Broker (RabbitMQ)
+    ↓
+Telegram Bot (Aiogram)
+    ↓
+Исполнители
+    ↓
+Обновление статусов → Dashboard
+```
+
+## Стек
+
+| Слой | Технологии |
+|---|---|
+| Backend | Python, Django DRF |
+| Frontend | React, TypeScript |
+| Messaging | RabbitMQ, Aiogram (Telegram Bot API) |
+| Database | PostgreSQL, Redis |
+
+## Результат
+
+- Снижение непроизводительного времени до **10%**
+- Повышение эффективности использования транспорта
+- Прозрачность процессов и ускорение координации
 
 ---
 
-### Результат
-
-* повышение эффективности использования транспорта
-* сокращение простоев
-* прозрачность процессов
-* ускорение координации
-
----
-
-### Эффект
-
-* снижение непроизводительного времени до **10%**
-
----
-
-### Примечание
-
-Проект представлен в обобщенном виде без раскрытия конфиденциального внутреннего содержимого.
+*Проект представлен в обобщённом виде без раскрытия конфиденциального внутреннего содержимого.*
 
 </details>
 
@@ -128,118 +77,71 @@ Dashboard
 <details>
 <summary>🇬🇧 English</summary>
 
-### 🚀 Overview
+> Real-time platform for transport logistics management and crew coordination
 
-**Smart Service** is a distributed system for managing transport logistics and coordinating field crews in real time.
+## Overview
 
-The platform integrates a dispatcher web interface with a Telegram-based execution layer, enabling seamless task
-management and real-time synchronization.
+A distributed system combining a dispatcher web interface with a Telegram-based execution layer for seamless task management and real-time status synchronization.
 
----
+## Problem → Solution
 
-### 💡 Problem
+| Problem | Solution |
+|---|---|
+| No real-time transport visibility | Centralized dashboard with fleet monitoring |
+| Inefficient task distribution | Unified task assignment and scheduling |
+| Fragmented communication channels | Single flow: web dispatcher ↔ Telegram worker |
+| Crew and equipment downtime | Real-time status tracking and auto-notifications |
 
-* lack of real-time visibility of transport availability
-* inefficient task distribution
-* no control over execution stages
-* downtime of crews and equipment
-* fragmented communication
+## How It Works
 
----
-
-### ✅ Solution
-
-A system consisting of two modules:
-
-**1. Dispatcher Module (Web):**
-
-* fleet monitoring
-* task assignment and scheduling
-* execution tracking
-* workload visualization
-
-**2. Execution Module (Telegram / WebApp):**
-
-* instant task delivery
-* task acceptance
-* step-by-step status updates
-* feedback to dispatcher system
-
----
-
-### 🧩 Key Features
-
-* real-time task lifecycle tracking
-* bidirectional communication
-* mobile-first via Telegram
-* centralized dashboard
-* synchronized system state
-* automated notifications
-
----
-
-### ⚙️ Tech Stack
-
-**Backend:**  
-Python, Django DRF
-
-**Frontend:**
-React, TypeScript
-
-**Messaging / Integration:**
-Aiogram (Telegram Bot API), RabbitMQ
-
-**Data / State:**
-PostgreSQL, Redis
-
----
-
-### 🏗️ Architecture
-
-```text
-Dispatcher (Web UI)
-        ↓
-Backend API (Django DRF)
-        ↓
-Message Broker (RabbitMQ)
-        ↓
-Telegram Bot (Aiogram)
-        ↓
-Field Workers
-        ↓
-Status Updates
-        ↓
-Dashboard
+```
+1. Dispatcher assigns a task (Web)
+2. Worker receives it via Telegram
+3. Updates execution stages step by step
+4. Status is synced in real time to the dashboard
 ```
 
+## Modules
+
+**Dispatcher Module (Web)**
+— fleet monitoring, task assignment, execution tracking, workload visualization
+
+**Execution Module (Telegram / WebApp)**
+— task receipt, acceptance, step-by-step status updates, feedback loop
+
+## Architecture
+
+```
+Dispatcher (Web UI)
+    ↓
+Backend API (Django DRF)
+    ↓
+Message Broker (RabbitMQ)
+    ↓
+Telegram Bot (Aiogram)
+    ↓
+Field Workers
+    ↓
+Status Updates → Dashboard
+```
+
+## Tech Stack
+
+| Layer | Technologies |
+|---|---|
+| Backend | Python, Django DRF |
+| Frontend | React, TypeScript |
+| Messaging | RabbitMQ, Aiogram (Telegram Bot API) |
+| Database | PostgreSQL, Redis |
+
+## Impact
+
+- Up to **10% reduction in non-productive time (NPT)**
+- Improved transport utilization
+- Real-time process visibility and faster coordination
+
 ---
 
-### Workflow
-
-1. Dispatcher assigns a task
-2. Worker receives it via Telegram
-3. Updates execution stages
-4. Status is synced in real time
-
----
-
-### Value
-
-* better transport utilization
-* reduced downtime
-* real-time visibility
-* faster coordination
-
----
-
-### Impact
-
-* up to **10% reduction in non-productive time (NPT)**
-
----
-
-### Notes
-
-This project is presented in a generalized form without disclosing confidential internal content.
+*This project is presented in a generalized form without disclosing confidential internal content.*
 
 </details>

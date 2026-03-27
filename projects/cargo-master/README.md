@@ -1,99 +1,58 @@
-# ГрузМастер
-
-> Веб-платформа для поиска, просмотра и управления схемами строповки с мобильным доступом и семантическим поиском
-
----
+# CargoMaster / ГрузМастер
 
 <details open>
 <summary>🇷🇺 Русский</summary>
 
-### 🚀 Обзор
+> Веб-платформа для поиска, просмотра и управления схемами строповки с мобильным доступом и семантическим поиском
 
-ГрузМастер — это цифровая платформа для хранения, поиска и управления схемами строповки, используемыми при погрузочно-разгрузочных работах.
+## Обзор
 
-Сервис заменяет бумажные альбомы и предоставляет быстрый доступ к схемам с мобильных устройств (смартфоны, планшеты), повышая удобство и безопасность работы.
+Цифровая платформа, заменяющая бумажные альбомы схем строповки. Обеспечивает быстрый доступ с мобильных устройств прямо на объекте — через QR-коды или поиск.
 
----
+## Проблема → Решение
 
-### 💡 Проблема
+| Проблема | Решение |
+|---|---|
+| Сложно найти нужную схему быстро | Полнотекстовый и семантический поиск |
+| Бумажные альбомы неудобны в полевых условиях | Mobile-first интерфейс, QR-доступ на объекте |
+| Документация может быть устаревшей | Централизованное обновление контента |
+| Ошибки при выборе схем → операционные риски | Структурированный каталог с визуализацией |
 
-- сложно быстро найти нужную схему строповки  
-- бумажные альбомы неудобны в полевых условиях  
-- документация может быть устаревшей или недоступной  
-- ошибки при выборе схем увеличивают операционные риски  
+## Возможности
 
----
+- **Каталог схем** с навигацией по категориям
+- **Семантический и полнотекстовый поиск** (Elasticsearch)
+- **Детальная карточка схемы** с визуализацией
+- **Mobile-first** адаптивный интерфейс
+- **QR-доступ** прямо на рабочем месте
+- **Административная панель** управления контентом
 
-### ✅ Решение
+## Стек
 
-Централизованная цифровая база схем строповки с:
+| Слой | Технологии |
+|---|---|
+| Frontend | React, TypeScript, styled-components, TanStack Query |
+| Backend | Django DRF |
+| Search | Elasticsearch |
+| Infrastructure | Docker, Nginx |
 
-- быстрым поиском (текстовым и семантическим)  
-- структурой по категориям и подкатегориям  
-- мобильным доступом через QR-коды  
-- детальными карточками схем с визуализацией  
-- удобным добавлением и обновлением контента  
+## Результат
 
----
+- Сокращение времени поиска нужной схемы
+- Отказ от бумажной документации
+- Стандартизация выполнения грузоподъёмных работ
+- Повышение безопасности операций
 
-### 🧩 Возможности
-
-- каталог схем строповки с поиском  
-- семантический и полнотекстовый поиск  
-- навигация по категориям  
-- детальная карточка схемы  
-- адаптивный интерфейс (mobile-first)  
-- административная панель для управления контентом  
-- доступ по QR-кодам на объекте  
-
----
-
-### ⚙️ Технологии
-
-**Frontend:**  
-React, TypeScript, styled-components, TanStack Query  
-
-**Backend:**  
-Django DRF  
-
-**Поиск / данные:**  
-Elasticsearch  
-
-**Инфраструктура:**  
-Docker, Nginx  
-
----
-
-### Результат
-
-- сокращение времени поиска схем  
-- повышение доступности производственных знаний  
-- отказ от бумажной документации  
-- стандартизация выполнения работ  
-- повышение безопасности грузоподъемных операций  
-
----
-
-### Скриншоты
+## Скриншоты
 
 <p align="center">
-  <a href="./assets/search-results.png">
-    <img src="./assets/search-results.png" alt="Результаты поиска" width="45%" />
-  </a>
-  <a href="./assets/scheme-details.png">
-    <img src="./assets/scheme-details.png" alt="Карточка схемы" width="45%" />
-  </a>
-</p>
-
-<p align="center">
-  <sub>Нажми на изображение, чтобы открыть в полном размере</sub>
+  <a href="./assets/search-results.png"><img src="./assets/search-results.png" width="45%" /></a>
+  <a href="./assets/scheme-details.png"><img src="./assets/scheme-details.png" width="45%" /></a>
 </p>
 
 ---
 
-### Примечание
-
-Проект представлен в обобщенном виде без раскрытия конфиденциального внутреннего содержимого.
+*Проект представлен в обобщённом виде без раскрытия конфиденциального внутреннего содержимого.*
 
 </details>
 
@@ -102,92 +61,55 @@ Docker, Nginx
 <details>
 <summary>🇬🇧 English</summary>
 
-### 🚀 Overview
+> Digital platform for managing cargo slinging schemes with semantic search and mobile access
 
-CargoMaster is a digital platform for storing, searching, and managing cargo slinging schemes used in loading and unloading operations.
+## Overview
 
-The system replaces paper-based manuals and provides fast access to required schemes from mobile devices, improving usability and operational safety.
+A digital platform replacing paper-based slinging scheme manuals. Provides fast on-site access from mobile devices via QR codes or search.
 
----
+## Problem → Solution
 
-### 💡 Problem
+| Problem | Solution |
+|---|---|
+| Hard to quickly find the correct scheme | Full-text and semantic search |
+| Paper manuals are impractical in the field | Mobile-first interface, QR-based on-site access |
+| Documentation may be outdated | Centralized content management |
+| Wrong scheme selection increases risk | Structured catalog with visual detail pages |
 
-- difficulty in quickly finding the correct slinging scheme  
-- paper-based documentation is inconvenient in field conditions  
-- documentation may be outdated or unavailable  
-- incorrect scheme selection increases operational risks  
+## Features
 
----
+- **Scheme catalog** with category navigation
+- **Semantic and full-text search** (Elasticsearch)
+- **Detailed scheme pages** with visuals
+- **Mobile-first** responsive interface
+- **QR-based access** at the worksite
+- **Admin panel** for content management
 
-### ✅ Solution
+## Tech Stack
 
-A centralized digital system providing:
+| Layer | Technologies |
+|---|---|
+| Frontend | React, TypeScript, styled-components, TanStack Query |
+| Backend | Django DRF |
+| Search | Elasticsearch |
+| Infrastructure | Docker, Nginx |
 
-- fast keyword and semantic search  
-- structured categories and navigation  
-- mobile access via QR codes  
-- detailed scheme pages with visuals  
-- easy content management and updates  
+## Impact
 
----
+- Reduced time to locate required schemes
+- Eliminated paper-based documentation
+- Standardized lifting operation execution
+- Improved operational safety
 
-### 🧩 Key Features
-
-- searchable catalog of schemes  
-- semantic and full-text search  
-- category-based navigation  
-- detailed scheme view  
-- mobile-friendly interface  
-- admin panel for content management  
-- QR-based access in the field  
-
----
-
-### ⚙️ Tech Stack
-
-**Frontend:**  
-React, TypeScript, styled-components, TanStack Query  
-
-**Backend:**  
-Django DRF  
-
-**Search / Data:**  
-Elasticsearch  
-
-**Infrastructure:**  
-Docker, Nginx  
-
----
-
-### Value
-
-- reduced time to find required schemes  
-- improved accessibility of operational knowledge  
-- elimination of paper-based documentation  
-- more consistent execution of operations  
-- increased safety in lifting processes  
-
----
-
-### Screenshots
+## Screenshots
 
 <p align="center">
-  <a href="./assets/search-results.png">
-    <img src="./assets/search-results.png" alt="Search Results" width="45%" />
-  </a>
-  <a href="./assets/scheme-details.png">
-    <img src="./assets/scheme-details.png" alt="Scheme Details" width="45%" />
-  </a>
-</p>
-
-<p align="center">
-  <sub>Click any image to open it in full size</sub>
+  <a href="./assets/search-results.png"><img src="./assets/search-results.png" width="45%" /></a>
+  <a href="./assets/scheme-details.png"><img src="./assets/scheme-details.png" width="45%" /></a>
 </p>
 
 ---
 
-### Notes
-
-This project is presented in a generalized form without disclosing confidential internal content.
+*This project is presented in a generalized form without disclosing confidential internal content.*
 
 </details>

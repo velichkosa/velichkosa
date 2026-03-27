@@ -1,185 +1,94 @@
-# Платформа цифровых решений
-
-> Внутренняя платформенная монорепа для промышленных веб-приложений с общим UI, аутентификацией и переиспользуемыми модулями
-
----
+# Digital Services Platform / Платформа цифровых решений
 
 <details open>
 <summary>🇷🇺 Русский</summary>
 
-### 🚀 Обзор
+> Внутренняя монорепа-платформа для промышленных веб-приложений с общим UI, аутентификацией и переиспользуемыми модулями
 
-Платформа цифровых решений — это внутренняя система, предназначенная для унификации, масштабирования и ускорения разработки прикладных сервисов в производственных процессах.
+## Обзор
 
-Изначально система состояла из нескольких независимых приложений, но со временем была трансформирована в единую платформу с общими архитектурными и UI-принципами.
+Платформа объединила несколько независимых сервисов в единую систему с общими архитектурными и UI-принципами, централизованной аутентификацией и переиспользуемыми компонентами.
 
----
+## Проблема → Решение
 
-### 💡 Проблема
+| Проблема | Решение |
+|---|---|
+| Дублирование UI и бизнес-логики | Общая дизайн-система и переиспользуемые компоненты |
+| Разрозненная аутентификация | Централизованная auth с ролевой моделью |
+| Неоднородный UX | Единый Digital Services Hub как точка входа |
+| Медленный запуск новых сервисов | Готовая платформенная основа для новых модулей |
 
-- дублирование UI и бизнес-логики между сервисами  
-- разрозненная аутентификация и управление доступами  
-- неоднородный пользовательский опыт  
-- сложность поддержки и масштабирования  
-- медленный запуск новых внутренних сервисов  
+## Структура платформы
 
----
+### 1. Digital Services Hub
+Центральная точка входа: каталог приложений, управление доступами, единый профиль пользователя, общая навигация.
 
-### ✅ Решение
+### 2. Сервис расчёта раствора глушения
+Инженерный сервис: автоматические расчёты, загрузка данных, генерация отчётов, прозрачная логика формул.
 
-Платформа на базе **monorepo**, объединяющая:
+### 3. Сервис обустройства цехов
+Визуальная система: интерактивный canvas, управление объектами, визуализация схем, история изменений.
 
-- единый Digital Services Hub (точка входа)  
-- общую систему аутентификации и ролей  
-- переиспользуемые UI-компоненты и layout  
-- общую архитектурную основу для новых модулей  
+## Архитектура
 
----
-
-### 🧩 Структура платформы
-
-#### 1. Digital Services Hub
-
-Центральная точка входа для пользователей:
-
-- каталог приложений  
-- управление доступами  
-- единый профиль пользователя  
-- общая навигация и layout  
-- единый UX/UI  
-
----
-
-#### 2. Сервис расчета раствора глушения
-
-Инженерный сервис для автоматизации расчетов:
-
-- автоматическая загрузка данных  
-- расчеты вместо Excel  
-- генерация отчетов  
-- прозрачная логика формул  
-
----
-
-#### 3. Сервис обустройства цехов
-
-Визуальная система управления инфраструктурой:
-
-- интерактивный canvas  
-- управление объектами  
-- визуализация схем  
-- интеграция с корпоративными данными  
-- история изменений  
-
----
-
-### 🧩 Архитектура
-
-```text
+```
 Пользователи
-  ↓
+    ↓
 Digital Services Hub
-  ├── Аутентификация / роли
-  ├── Дизайн-система
-  ├── Layout / навигация
-  └── Каталог сервисов
-          ↓
-   ┌───────────────────────────────┬───────────────────────────────┐
-   │                               │                               │
-Сервис глушения              Обустройство цехов              Новые модули
-   │                               │
-FastAPI + PostgreSQL         FastAPI + PostgreSQL
-   │                               │
-Корпоративные данные         Геоданные / OIS / ремонты
-````
+    ├── Аутентификация / роли
+    ├── Дизайн-система
+    ├── Layout / навигация
+    └── Каталог сервисов
+            ↓
+    ┌───────────────────┬──────────────────┐
+    │                   │                  │
+Сервис глушения   Обустройство цехов   Новые модули
+    │                   │
+FastAPI + PostgreSQL  FastAPI + PostgreSQL
+```
 
----
+## Стек
 
-### ⚙️ Технологии
+| Слой | Технологии |
+|---|---|
+| Frontend | React, TypeScript, Vite, styled-components, Konva |
+| Backend | Python, FastAPI, SQLAlchemy, Pandas |
+| Database | PostgreSQL |
+| Architecture | Monorepo, shared design system, centralized auth |
 
-**Frontend:**
-React, TypeScript, Vite, styled-components, Konva
+## Результат
 
-**Backend:**
-Python, FastAPI, SQLAlchemy, Pandas
+- Переход от разрозненных сервисов к единой платформе
+- Снижение дублирования во frontend и backend
+- Унификация пользовательского опыта
+- Ускорение разработки новых сервисов
 
-**Данные:**
-PostgreSQL
+## Скриншоты
 
-**Архитектура:**
-Monorepo, общая дизайн-система, переиспользуемые компоненты, централизованная аутентификация
-
----
-
-### Возможности платформы
-
-* единый хаб внутренних сервисов
-* ролевая модель доступа
-* общий UI и дизайн-система
-* быстрое подключение новых модулей
-* снижение дублирования кода
-* упрощение поддержки
-
----
-
-### Результат
-
-* переход от разрозненных сервисов к платформе
-* снижение дублирования во frontend и backend
-* унификация пользовательского опыта
-* ускорение разработки новых сервисов
-* создание базы для масштабирования
-
----
-
-### Скриншоты
-
-#### Hub
+### Hub
 
 <p align="center">
-  <a href="./assets/hub-main.png">
-    <img src="./assets/hub-main.png" width="45%" />
-  </a>
-  <a href="./assets/hub-access.png">
-    <img src="./assets/hub-access.png" width="45%" />
-  </a>
+  <a href="./assets/hub-main.png"><img src="./assets/hub-main.png" width="45%" /></a>
+  <a href="./assets/hub-access.png"><img src="./assets/hub-access.png" width="45%" /></a>
+</p>
+
+### Сервис глушения
+
+<p align="center">
+  <a href="./assets/jamsheet-main.png"><img src="./assets/jamsheet-main.png" width="45%" /></a>
+  <a href="./assets/jamsheet-formula.png"><img src="./assets/jamsheet-formula.png" width="45%" /></a>
+</p>
+
+### Обустройство цехов
+
+<p align="center">
+  <a href="./assets/field-control-main.png"><img src="./assets/field-control-main.png" width="45%" /></a>
+  <a href="./assets/field-control-objects.png"><img src="./assets/field-control-objects.png" width="45%" /></a>
 </p>
 
 ---
 
-#### Сервис глушения
-
-<p align="center">
-  <a href="./assets/jamsheet-main.png">
-    <img src="./assets/jamsheet-main.png" width="45%" />
-  </a>
-  <a href="./assets/jamsheet-formula.png">
-    <img src="./assets/jamsheet-formula.png" width="45%" />
-  </a>
-</p>
-
----
-
-#### Обустройство цехов
-
-<p align="center">
-  <a href="./assets/field-control-main.png">
-    <img src="./assets/field-control-main.png" width="45%" />
-  </a>
-  <a href="./assets/field-control-objects.png">
-    <img src="./assets/field-control-objects.png" width="45%" />
-  </a>
-</p>
-
-<p align="center">
-  <sub>Нажми на изображение, чтобы открыть в полном размере</sub>
-</p>
-
----
-
-### Примечание
-
-Проект представлен в обобщенном виде без раскрытия конфиденциального внутреннего содержимого.
+*Проект представлен в обобщённом виде без раскрытия конфиденциального внутреннего содержимого.*
 
 </details>
 
@@ -188,68 +97,35 @@ Monorepo, общая дизайн-система, переиспользуемы
 <details>
 <summary>🇬🇧 English</summary>
 
-### 🚀 Overview
+> Internal monorepo platform for industrial web applications with shared UI, authentication, and reusable modules
 
-Digital Services Hub is an internal platform designed to unify and scale industrial web applications.
+## Overview
 
-Initially developed as separate services, it evolved into a monorepo-based platform with shared architecture, UI system, and reusable components.
+The platform consolidated several independent services into a unified system with shared architectural and UI principles, centralized authentication, and reusable components.
 
----
+## Problem → Solution
 
-### 💡 Problem
+| Problem | Solution |
+|---|---|
+| Duplicated UI and business logic | Shared design system and reusable components |
+| Fragmented authentication | Centralized auth with role-based access |
+| Inconsistent UX | Unified Digital Services Hub as single entry point |
+| Slow delivery of new internal tools | Ready-made platform foundation for new modules |
 
-* duplicated UI and business logic
-* fragmented authentication and access control
-* inconsistent user experience
-* complex maintenance and scaling
-* slow delivery of new internal tools
+## Platform Structure
 
----
+### 1. Digital Services Hub
+Central entry point: app catalog, access management, unified user profile, shared navigation.
 
-### ✅ Solution
+### 2. Well Killing Calculation Service
+Engineering service: automated calculations, data integration, report generation, transparent formula logic.
 
-A platform built on a **monorepo architecture** providing:
+### 3. Field Infrastructure Control Service
+Visual management system: interactive canvas, object management, infrastructure visualization, change history.
 
-* centralized Digital Services Hub
-* shared authentication and role system
-* reusable UI components and layouts
-* unified foundation for future modules
+## Architecture
 
----
-
-### 🧩 Platform Structure
-
-#### 1. Digital Services Hub
-
-* application catalog
-* access management
-* shared navigation and layout
-* unified UX/UI
-
----
-
-#### 2. Well Killing Calculation Service
-
-* automated engineering calculations
-* data integration
-* report generation
-* transparent calculation logic
-
----
-
-#### 3. Field Infrastructure Control Service
-
-* interactive canvas workspace
-* object management
-* infrastructure visualization
-* integration with enterprise data
-* change history
-
----
-
-### 🧩 Architecture
-
-```text
+```
 Users
   ↓
 Digital Services Hub
@@ -258,88 +134,55 @@ Digital Services Hub
   ├── Layout / navigation
   └── App catalog
           ↓
-   ┌───────────────────────────────┬───────────────────────────────┐
-   │                               │                               │
-Well Killing Service        Infrastructure Control        Future Modules
-   │                               │
-FastAPI + PostgreSQL         FastAPI + PostgreSQL
+  ┌───────────────────┬──────────────────┐
+  │                   │                  │
+Well Killing     Infrastructure     Future Modules
+Service          Control
+  │                   │
+FastAPI + PostgreSQL  FastAPI + PostgreSQL
 ```
 
----
+## Tech Stack
 
-### ⚙️ Tech Stack
+| Layer | Technologies |
+|---|---|
+| Frontend | React, TypeScript, Vite, styled-components, Konva |
+| Backend | Python, FastAPI, SQLAlchemy, Pandas |
+| Database | PostgreSQL |
+| Architecture | Monorepo, shared design system, centralized auth |
 
-**Frontend:**
-React, TypeScript, Vite, styled-components, Konva
+## Impact
 
-**Backend:**
-Python, FastAPI, SQLAlchemy, Pandas
+- Transformed separate tools into a unified platform
+- Reduced duplication across frontend and backend
+- Consistent user experience across all services
+- Faster development of new modules
 
-**Database:**
-PostgreSQL
+## Screenshots
 
-**Architecture:**
-Monorepo, shared UI system, reusable components, centralized authentication
-
----
-
-### Impact
-
-* transformation from separate tools to a unified platform
-* reduced duplication across services
-* improved UX consistency
-* faster development of new modules
-* scalable foundation for future products
-
----
-
-### Screenshots
-
-#### Hub
+### Hub
 
 <p align="center">
-  <a href="./assets/hub-main.png">
-    <img src="./assets/hub-main.png" width="45%" />
-  </a>
-  <a href="./assets/hub-access.png">
-    <img src="./assets/hub-access.png" width="45%" />
-  </a>
+  <a href="./assets/hub-main.png"><img src="./assets/hub-main.png" width="45%" /></a>
+  <a href="./assets/hub-access.png"><img src="./assets/hub-access.png" width="45%" /></a>
+</p>
+
+### Well Killing Service
+
+<p align="center">
+  <a href="./assets/jamsheet-main.png"><img src="./assets/jamsheet-main.png" width="45%" /></a>
+  <a href="./assets/jamsheet-formula.png"><img src="./assets/jamsheet-formula.png" width="45%" /></a>
+</p>
+
+### Infrastructure Control
+
+<p align="center">
+  <a href="./assets/field-control-main.png"><img src="./assets/field-control-main.png" width="45%" /></a>
+  <a href="./assets/field-control-objects.png"><img src="./assets/field-control-objects.png" width="45%" /></a>
 </p>
 
 ---
 
-#### Well Killing Service
-
-<p align="center">
-  <a href="./assets/jamsheet-main.png">
-    <img src="./assets/jamsheet-main.png" width="45%" />
-  </a>
-  <a href="./assets/jamsheet-formula.png">
-    <img src="./assets/jamsheet-formula.png" width="45%" />
-  </a>
-</p>
-
----
-
-#### Infrastructure Control
-
-<p align="center">
-  <a href="./assets/field-control-main.png">
-    <img src="./assets/field-control-main.png" width="45%" />
-  </a>
-  <a href="./assets/field-control-objects.png">
-    <img src="./assets/field-control-objects.png" width="45%" />
-  </a>
-</p>
-
-<p align="center">
-  <sub>Click any image to open it in full size</sub>
-</p>
-
----
-
-### Notes
-
-This project is presented in a generalized form without disclosing confidential internal content.
+*This project is presented in a generalized form without disclosing confidential internal content.*
 
 </details>

@@ -1,78 +1,51 @@
 <details open>
 <summary>🇷🇺 Русский</summary>
 
-## 📂 Каталог проектов
+# Каталог проектов
 
-> Структурированный обзор выбранных систем и платформ  
 > AI · Fullstack · Enterprise Systems · Automation
 
-Ниже представлены ключевые системы, разработанные мной — от AI-платформ до промышленных fullstack-сервисов.
+---
+
+## 🤖 AI / LLM системы
+
+| Проект | Описание | Стек |
+|---|---|---|
+| [Цифровой помощник](./digital-ai-assistant/README.md) | Production AI-ассистент с мультиагентной архитектурой, RAG и генерацией SQL | Python, LangChain, RAG, ChromaDB, Streamlit |
 
 ---
 
-## 🏗️ Платформа и внутренние системы
+## 🏗️ Платформы и внутренние системы
 
-### Платформа цифровых решений
-
-Монорепа-платформа для внутренних сервисов с единым UI, auth и архитектурой
-
-→ [Открыть проект](./skkd_hub/README.md)
-
----
-
-## 🤖 AI / LLM Системы
-
-### Цифровой помощник (AI-ассистент)
-
-Production-ready AI система с мультиагентной архитектурой, RAG и генерацией SQL
-
-→ [Открыть проект](./digital-ai-assistant/README.md)
+| Проект | Описание | Стек |
+|---|---|---|
+| [Платформа цифровых решений](./skkd_hub/README.md) | Монорепа-платформа с единым UI, аутентификацией и переиспользуемыми модулями | React, FastAPI, PostgreSQL |
 
 ---
 
 ## 🏭 Промышленные системы
 
-### АСПО.Контроль
-
-Система мониторинга и оптимизации операций по скребкованию скважин
-
-→ [Открыть проект](./aspo/README.md)
+| Проект | Описание | Стек |
+|---|---|---|
+| [АСПО.Контроль](./aspo/README.md) | Мониторинг и оптимизация операций по скребкованию скважин | React, Django DRF, PostgreSQL, Redis |
+| [Сервис+](./service-plus/README.md) | Контроль качества услуг подрядчиков и управление инспекциями | React, Django DRF, PostgreSQL |
 
 ---
-
-### Сервис+
-
-Система контроля качества услуг подрядчиков
-
-→ [Открыть проект](./service-plus/README.md)
 
 ## 🚛 Операции и логистика
 
-### Смарт Сервис
-
-Система управления транспортом и координации бригад в реальном времени
-
-→ [Открыть проект](./smart-service/README.md)
-
----
-
-### ГрузМастер
-
-Веб-платформа для поиска, просмотра и управления схемами строповки с мобильным доступом и семантическим поиском
-
-→ [Открыть проект](./cargo-master/README.md)
+| Проект | Описание | Стек |
+|---|---|---|
+| [Smart Service](./smart-service/README.md) | Управление транспортом и координация бригад в реальном времени | React, Django DRF, RabbitMQ, Telegram Bot |
+| [ГрузМастер](./cargo-master/README.md) | Платформа схем строповки с семантическим поиском и мобильным доступом | React, Django DRF, Elasticsearch |
 
 ---
 
-## 🛡️ Системы безопасности и знаний
+## 🛡️ Безопасность и знания
 
-### Цифровой информационный стенд по ГОиЧС
-
-QR-система для быстрого доступа к инструкциям по действиям в ЧС
-
-→ [Открыть проект](./gochs/README.md)
-
----
+| Проект | Описание | Стек |
+|---|---|---|
+| [ГОиЧС](./gochs/README.md) | QR-система быстрого доступа к инструкциям по действиям в ЧС | HTML, CSS, JS |
 
 </details>
 
@@ -83,77 +56,48 @@ QR-система для быстрого доступа к инструкция
 
 # Project Catalog
 
-> Structured overview of selected systems and platforms  
 > AI · Fullstack · Enterprise Systems · Automation
-
-Below is a curated selection of systems I designed and built — from AI platforms to industrial fullstack applications.
-
----
-
-## 🏗️ Platform & Internal Systems
-
-### Digital Services Platform (SKKD Hub)
-
-Monorepo-based internal platform with shared UI, authentication, and architecture
-
-→ [Open project](./skkd_hub/README.md)
 
 ---
 
 ## 🤖 AI / LLM Systems
 
-### Digital AI Assistant
+| Project | Description | Stack |
+|---|---|---|
+| [Digital AI Assistant](./digital-ai-assistant/README.md) | Production AI system with multi-agent architecture, RAG, and SQL generation | Python, LangChain, RAG, ChromaDB, Streamlit |
 
-Production-grade AI system with multi-agent architecture, RAG, and SQL generation
+---
 
-→ [Open project](./digital-ai-assistant/README.md)
+## 🏗️ Platform & Internal Systems
+
+| Project | Description | Stack |
+|---|---|---|
+| [Digital Services Platform](./skkd_hub/README.md) | Monorepo platform with shared UI, authentication, and reusable modules | React, FastAPI, PostgreSQL |
 
 ---
 
 ## 🏭 Industrial Systems
 
-### ASPO Monitoring
-
-Well operation analytics and optimization system
-
-→ [Open project](./aspo/README.md)
-
----
-
-### Service+
-
-Quality control system for contractor operations
-
-→ [Open project](./service-plus/README.md)
+| Project | Description | Stack |
+|---|---|---|
+| [ASPO Monitoring](./aspo/README.md) | Well scraping operations monitoring and optimization | React, Django DRF, PostgreSQL, Redis |
+| [Service+](./service-plus/README.md) | Contractor quality control and inspection management | React, Django DRF, PostgreSQL |
 
 ---
 
 ## 🚛 Operations & Logistics
 
-### Smart Service
-
-Real-time transport and workforce coordination system
-
-→ [Open project](./smart-service/README.md)
-
----
-
-### CargoMaster
-
-Digital platform for managing cargo slinging schemes with semantic search
-
-→ [Open project](./cargo-master/README.md)
+| Project | Description | Stack |
+|---|---|---|
+| [Smart Service](./smart-service/README.md) | Real-time transport management and crew coordination | React, Django DRF, RabbitMQ, Telegram Bot |
+| [CargoMaster](./cargo-master/README.md) | Slinging scheme platform with semantic search and mobile access | React, Django DRF, Elasticsearch |
 
 ---
 
-## 🛡️ Safety & Knowledge Systems
+## 🛡️ Safety & Knowledge
 
-### Emergency QR System (GOCHS)
-
-QR-based system for instant access to emergency instructions
-
-→ [Open project](./gochs/README.md)
-
----
+| Project | Description | Stack |
+|---|---|---|
+| [Emergency QR System](./gochs/README.md) | QR-based instant access to emergency instructions | HTML, CSS, JS |
 
 </details>

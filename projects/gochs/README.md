@@ -1,96 +1,58 @@
-# Цифровой информационный стенд по ГОиЧС
-
-> QR-система для быстрого доступа к инструкциям по действиям в ЧС
-
----
+# Emergency QR System / Цифровой стенд ГОиЧС
 
 <details open>
 <summary>🇷🇺 Русский</summary>
 
-### 🚀 Обзор
+> QR-система для быстрого доступа к инструкциям по действиям в чрезвычайных ситуациях
 
-Система для предоставления сотрудникам и подрядчикам мгновенного доступа к инструкциям при чрезвычайных ситуациях через
-QR-коды, размещенные на объектах.
+## Обзор
 
-После сканирования пользователь попадает в веб-интерфейс с актуальной информацией, инструкциями и материалами.
+Система предоставляет сотрудникам и подрядчикам мгновенный доступ к инструкциям по ЧС через QR-коды, размещённые на объектах. Заменяет бумажные стенды централизованной, всегда актуальной веб-базой знаний.
 
----
+## Проблема → Решение
 
-### 💡 Проблема
+| Проблема | Решение |
+|---|---|
+| Нет быстрого доступа к инструкциям | QR-код → мгновенный переход на мобильный интерфейс |
+| Зависимость от бумажных материалов | Централизованный веб-контент без печати |
+| Устаревшие данные | Обновление в одном месте — актуально везде |
+| Затраты на печать и обслуживание | Цифровой формат без расходных материалов |
 
-- отсутствие быстрого доступа к инструкциям
-- зависимость от бумажных материалов
-- устаревшие данные
-- затраты на печать и обновление
+## Возможности
 
----
+- **Мгновенный доступ по QR** с любого мобильного устройства
+- **Структурированная база знаний** по видам ЧС
+- **Централизованное управление** контентом
+- **Mobile-first** интерфейс
+- **Масштабируемость** на любое число объектов
 
-### ✅ Решение
+## Стек
 
-- размещение QR-кодов на объектах
-- единый веб-интерфейс
-- структурированная база знаний по ЧС
-- централизованное обновление контента
-- доступ с мобильных устройств
+| Слой | Технологии |
+|---|---|
+| Frontend | HTML, CSS, JavaScript |
+| Infrastructure | QR Codes, Web Hosting |
 
----
+## Результат
 
-### 🧩 Возможности
+- Повышение уровня готовности к ЧС
+- Ускорение доступа к инструкциям
+- Снижение затрат на поддержание актуальности
+- Отказ от бумажных материалов
 
-- мгновенный доступ по QR
-- мобильный web-интерфейс
-- централизованное управление контентом
-- структурированные инструкции
-- масштабируемость
-- отказ от печатных материалов
-
----
-
-### ⚙️ Технологии
-
-**Frontend:**  
-HTML, CSS, JavaScript
-
-**Инфраструктура:**  
-QR-коды, Web Hosting
-
----
-
-### Скриншоты
+## Скриншоты
 
 <p align="center">
-  <a href="./assets/main.png">
-    <img src="./assets/main.png" alt="Главный экран" width="45%" />
-  </a>
-  <a href="./assets/guidelines.png">
-    <img src="./assets/guidelines.png" alt="Раздел памяток" width="45%" />
-  </a>
+  <a href="./assets/main.png"><img src="./assets/main.png" width="45%" /></a>
+  <a href="./assets/guidelines.png"><img src="./assets/guidelines.png" width="45%" /></a>
 </p>
-
 <p align="center">
-  <a href="./assets/action.png">
-    <img src="./assets/action.png" alt="Пример инструкции" width="45%" />
-  </a>
-</p>
-
-<p align="center">
-  <sub>Нажми на изображение, чтобы открыть в полном размере</sub>
+  <a href="./assets/action.png"><img src="./assets/action.png" width="45%" /></a>
 </p>
 
 ---
 
-### Результат
-
-- повышение уровня безопасности
-- ускорение доступа к информации
-- снижение затрат
-- актуальность данных
-
----
-
-### Примечание
-
-Проект представлен в обобщенном виде без раскрытия конфиденциального внутреннего содержимого.
+*Проект представлен в обобщённом виде без раскрытия конфиденциального внутреннего содержимого.*
 
 </details>
 
@@ -99,89 +61,55 @@ QR-коды, Web Hosting
 <details>
 <summary>🇬🇧 English</summary>
 
-### 🚀 Overview
+> QR-based system for instant access to emergency response instructions
 
-A system that provides employees and contractors with instant access to emergency instructions via QR codes placed on
-industrial sites.
+## Overview
 
-After scanning a QR code, users are redirected to a web interface with up-to-date instructions and guidelines.
+The system gives employees and contractors immediate access to emergency instructions via QR codes placed on-site. Replaces paper boards with a centralized, always up-to-date web knowledge base.
 
----
+## Problem → Solution
 
-### 💡 Problem
+| Problem | Solution |
+|---|---|
+| No fast access to emergency instructions | QR code → instant mobile web interface |
+| Reliance on printed materials | Centralized web content, no printing required |
+| Outdated information | Update once — current everywhere |
+| High print and maintenance costs | Digital format with zero consumables |
 
-- no fast access to emergency instructions
-- reliance on printed materials
-- outdated information
-- high maintenance costs
+## Features
 
----
+- **Instant QR access** from any mobile device
+- **Structured knowledge base** by emergency type
+- **Centralized content management**
+- **Mobile-first** interface
+- **Scalable** across any number of sites
 
-### ✅ Solution
+## Tech Stack
 
-- QR codes deployed on-site
-- centralized web interface
-- structured knowledge base
-- real-time content updates
-- mobile-first access
+| Layer | Technologies |
+|---|---|
+| Frontend | HTML, CSS, JavaScript |
+| Infrastructure | QR Codes, Web Hosting |
 
----
+## Impact
 
-### 🧩 Key Features
+- Improved emergency preparedness
+- Faster access to critical instructions
+- Reduced content maintenance costs
+- Fully paperless format
 
-- instant access via QR
-- mobile-friendly interface
-- centralized content management
-- structured knowledge base
-- scalable across locations
-- no printing required
-
----
-
-### ⚙️ Tech Stack
-
-**Frontend:**  
-HTML, CSS, JavaScript
-
-**Infrastructure:**  
-QR Codes, Web Hosting
-
----
-
-### Screenshots
+## Screenshots
 
 <p align="center">
-  <a href="./assets/main.png">
-    <img src="./assets/main.png" alt="Main Screen" width="45%" />
-  </a>
-  <a href="./assets/guidelines.png">
-    <img src="./assets/guidelines.png" alt="Guidelines" width="45%" />
-  </a>
+  <a href="./assets/main.png"><img src="./assets/main.png" width="45%" /></a>
+  <a href="./assets/guidelines.png"><img src="./assets/guidelines.png" width="45%" /></a>
 </p>
-
 <p align="center">
-  <a href="./assets/action.png">
-    <img src="./assets/action.png" alt="Instruction Example" width="45%" />
-  </a>
-</p>
-
-<p align="center">
-  <sub>Click any image to open it in full size</sub>
+  <a href="./assets/action.png"><img src="./assets/action.png" width="45%" /></a>
 </p>
 
 ---
 
-### Value
-
-- improved safety awareness
-- faster emergency response
-- reduced costs
-- always актуальная информация
-
----
-
-### Notes
-
-This project is presented in a generalized form without disclosing confidential internal content.
+*This project is presented in a generalized form without disclosing confidential internal content.*
 
 </details>

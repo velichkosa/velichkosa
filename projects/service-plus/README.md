@@ -1,107 +1,62 @@
-# Сервис+
-
-> Система контроля качества выполнения услуг подрядчиками и управления инспекциями
-
----
+# Service+ / Сервис+
 
 <details open>
 <summary>🇷🇺 Русский</summary>
 
-### 🚀 Обзор
+> Система контроля качества выполнения услуг подрядчиками и управления инспекциями
 
-Service+ — это система для контроля качества выполнения услуг подрядными организациями на производственных объектах.
+## Обзор
 
-Платформа цифровизирует инспекции, фиксирует нарушения и управляет полным жизненным циклом их устранения — от выявления
-до закрытия.
+Платформа цифровизирует инспекции на производственных объектах, фиксирует нарушения и управляет полным жизненным циклом их устранения — от выявления до закрытия.
 
----
+## Проблема → Решение
 
-### 💡 Проблема
+| Проблема | Решение |
+|---|---|
+| Нет централизованного контроля подрядчиков | Единая система с цифровыми чек-листами |
+| Повторяющиеся нарушения | Audit trail и аналитика по нарушениям |
+| Ручные процессы отчётности | Автоматическая фиксация и статусы |
+| Низкая прозрачность процессов | Дашборды, уведомления, история изменений |
 
-- отсутствие централизованного контроля подрядчиков
-- большое количество объектов и услуг
-- повторяющиеся нарушения
-- ручные процессы отчетности
-- низкая прозрачность процессов
+## Возможности
 
----
+- **Цифровые инспекционные чек-листы**
+- **Фиксация нарушений** с фото и вложениями
+- **Управление жизненным циклом** задач
+- **Уведомления** и трекинг статусов
+- **Аналитика и отчётность**
+- **Audit trail** — полная история изменений
+- **Экспорт в Excel**
 
-### ✅ Решение
+## Стек
 
-Единая система контроля с:
+| Слой | Технологии |
+|---|---|
+| Backend | Python, Django DRF |
+| Frontend | React, TypeScript, Redux |
+| Database | PostgreSQL |
 
-- цифровыми обходными листами
-- фиксацией нарушений (с фото)
-- назначением ответственных
-- отслеживанием статусов
-- отчетностью и аналитикой
-- экспортом данных (Excel)
+## Результат
 
----
+- Повышение контроля качества услуг
+- Снижение числа повторяющихся нарушений
+- Ускорение устранения проблем
+- Улучшение безопасности и соответствия нормам
 
-### 🧩 Возможности
-
-- цифровой чек-лист инспекций
-- фиксация нарушений и вложений
-- управление жизненным циклом задач
-- уведомления и статусы
-- отчеты и аналитика
-- история изменений (audit trail)
-
----
-
-### ⚙️ Технологии
-
-**Backend:**  
-Python, Django DRF
-
-**Frontend:**  
-React, TypeScript, Redux
-
-**Данные:**  
-PostgreSQL
-
----
-
-### Результат
-
-- повышение контроля качества услуг
-- снижение повторяющихся нарушений
-- ускорение устранения проблем
-- повышение прозрачности процессов
-- улучшение безопасности
-
----
-
-### Скриншоты
+## Скриншоты
 
 <p align="center">
-  <a href="./assets/form.png">
-    <img src="./assets/form.png" alt="Форма обхода" width="45%" />
-  </a>
-  <a href="./assets/card.png">
-    <img src="./assets/card.png" alt="Карточка нарушения" width="45%" />
-  </a>
+  <a href="./assets/form.png"><img src="./assets/form.png" width="45%" /></a>
+  <a href="./assets/card.png"><img src="./assets/card.png" width="45%" /></a>
 </p>
-
 <p align="center">
-  <a href="./assets/notifications.png">
-    <img src="./assets/notifications.png" alt="Уведомления" width="45%" />
-  </a>
-  <a href="./assets/objects.png">
-    <img src="./assets/objects.png" alt="Список объектов" width="45%" />
-  </a>
-</p>
-
-<p align="center">
-  <sub>Нажми на изображение, чтобы открыть в полном размере</sub>
+  <a href="./assets/notifications.png"><img src="./assets/notifications.png" width="45%" /></a>
+  <a href="./assets/objects.png"><img src="./assets/objects.png" width="45%" /></a>
 </p>
 
 ---
 
-### Примечание
-
-Проект представлен в обобщенном виде без раскрытия конфиденциального внутреннего содержимого.
+*Проект представлен в обобщённом виде без раскрытия конфиденциального внутреннего содержимого.*
 
 </details>
 
@@ -110,100 +65,59 @@ PostgreSQL
 <details>
 <summary>🇬🇧 English</summary>
 
-### 🚀 Overview
+> Contractor service quality control and inspection management system
 
-Service+ is a system designed to control the quality of services provided by contractors across industrial sites.
+## Overview
 
-It digitizes inspection workflows, tracks violations, and manages the full lifecycle of issue resolution — from
-detection to closure.
+The platform digitizes inspections at industrial sites, captures violations, and manages the full lifecycle of issue resolution — from detection to closure.
 
----
+## Problem → Solution
 
-### 💡 Problem
+| Problem | Solution |
+|---|---|
+| No centralized contractor oversight | Unified system with digital checklists |
+| Recurring violations | Audit trail and violation analytics |
+| Manual reporting processes | Automated capture and status tracking |
+| Low process transparency | Dashboards, notifications, change history |
 
-- lack of centralized contractor control
-- large number of sites and services
-- recurring violations
-- manual reporting processes
-- low transparency
+## Features
 
----
+- **Digital inspection checklists**
+- **Violation tracking** with photos and attachments
+- **Task lifecycle management**
+- **Notifications** and status tracking
+- **Analytics and reporting**
+- **Audit trail** — full change history
+- **Excel export**
 
-### ✅ Solution
+## Tech Stack
 
-A unified inspection platform with:
+| Layer | Technologies |
+|---|---|
+| Backend | Python, Django DRF |
+| Frontend | React, TypeScript, Redux |
+| Database | PostgreSQL |
 
-- digital inspection checklists
-- photo-based issue capture
-- task assignment
-- status tracking and workflows
-- reporting and analytics
-- Excel export
+## Impact
 
----
+- Improved contractor service quality control
+- Reduced recurring violations
+- Faster issue resolution
+- Improved safety and compliance
 
-### 🧩 Key Features
-
-- field-ready inspection forms
-- violation tracking workflow
-- attachments and photo evidence
-- notifications and status updates
-- reporting and analytics
-- audit trail
-
----
-
-### ⚙️ Tech Stack
-
-**Backend:**  
-Python, Django DRF
-
-**Frontend:**  
-React, TypeScript, Redux
-
-**Database:**  
-PostgreSQL
-
----
-
-### Impact
-
-- improved service quality control
-- reduced recurring violations
-- faster issue resolution
-- increased transparency
-- improved safety and compliance
-
----
-
-### Screenshots
+## Screenshots
 
 <p align="center">
-  <a href="./assets/form.png">
-    <img src="./assets/form.png" alt="Inspection Form" width="45%" />
-  </a>
-  <a href="./assets/card.png">
-    <img src="./assets/card.png" alt="Violation Card" width="45%" />
-  </a>
+  <a href="./assets/form.png"><img src="./assets/form.png" width="45%" /></a>
+  <a href="./assets/card.png"><img src="./assets/card.png" width="45%" /></a>
 </p>
-
 <p align="center">
-  <a href="./assets/notifications.png">
-    <img src="./assets/notifications.png" alt="Notifications" width="45%" />
-  </a>
-  <a href="./assets/objects.png">
-    <img src="./assets/objects.png" alt="Objects List" width="45%" />
-  </a>
-</p>
-
-<p align="center">
-  <sub>Click any image to open it in full size</sub>
+  <a href="./assets/notifications.png"><img src="./assets/notifications.png" width="45%" /></a>
+  <a href="./assets/objects.png"><img src="./assets/objects.png" width="45%" /></a>
 </p>
 
 ---
 
-### Notes
-
-This project is presented in a generalized form without disclosing confidential internal content.
+*This project is presented in a generalized form without disclosing confidential internal content.*
 
 </details>

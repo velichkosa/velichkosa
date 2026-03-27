@@ -1,122 +1,77 @@
-# Цифровой помощник (AI-ассистент)
-
-> Production-ready AI система для автоматизации рабочих процессов с использованием LLM и мультиагентной архитектуры
-
----
+# Digital AI Assistant / Цифровой помощник
 
 <details open>
 <summary>🇷🇺 Русский</summary>
 
-### 🚀 Обзор
+> Production-ready AI система для автоматизации рабочих процессов с использованием LLM и мультиагентной архитектуры
 
-Цифровой AI-ассистент — это платформа для автоматизации работы с документами, таблицами и базами данных через
-естественный язык.
+## Обзор
 
-Система объединяет LLM, RAG и мультиагентную архитектуру, позволяя пользователям взаимодействовать с данными без
-необходимости писать код или SQL.
+Платформа для автоматизации работы с документами, таблицами и базами данных через естественный язык.
 
----
+Система объединяет LLM, RAG и мультиагентную архитектуру, позволяя пользователям взаимодействовать с данными без необходимости писать код или SQL.
 
-### 💡 Проблема
+## Проблема → Решение
 
-- работа с данными требует технических навыков
-- ручной анализ документов занимает много времени
-- сложно быстро получить ответы из разрозненных источников
-- высокий порог входа для бизнес-пользователей
+| Проблема | Решение |
+|---|---|
+| Работа с данными требует технических навыков | Запросы на естественном языке |
+| Ручной анализ документов занимает много времени | RAG-пайплайн с автоматической обработкой |
+| Сложно получить ответы из разрозненных источников | Мультиагентная агрегация данных |
+| Высокий порог входа для бизнес-пользователей | Интуитивный чат-интерфейс |
 
----
+## Возможности
 
-### ✅ Решение
+- **RAG** — работа с документами (PDF, Excel, текст)
+- **Text-to-SQL** — генерация SQL-запросов из естественного языка
+- **Суммаризация и анализ** данных
+- **Мульти-источники** — агрегация из разных систем
+- **Визуализация** — построение графиков и дашбордов
+- **Персональные ассистенты** под конкретные задачи
 
-Интеллектуальный ассистент, который:
+## Архитектура
 
-- понимает запросы на естественном языке
-- работает с документами (PDF, Excel, текст)
-- генерирует SQL-запросы
-- агрегирует данные из разных источников
-- формирует отчёты и аналитические выводы
+```
+Пользователь
+    ↓
+Оркестратор
+    ├── Classifier Agent     — определение типа запроса
+    ├── Query Refiner        — нормализация запроса
+    ├── RAG Agent            — работа с документами
+    ├── SQL Generator        — генерация SQL
+    ├── Debugger             — исправление ошибок
+    ├── Chart Agent          — построение графиков
+    ├── ECharts Agent        — визуализация
+    └── Security Agent       — проверка безопасности
+    ↓
+Ответ пользователю
+```
 
----
+## Стек
 
-### 🧠 Возможности
+| Слой | Технологии |
+|---|---|
+| Backend / Core | Python (async processing, pipelines) |
+| AI / LLM | LangChain, RAG, Embeddings |
+| Data Processing | Pandas, SQL |
+| Vector Storage | ChromaDB |
+| Interface | Streamlit |
 
-- RAG (работа с документами)
-- генерация SQL из текста
-- суммаризация и анализ
-- мульти-источники данных
-- персональные AI-ассистенты
-- визуализация данных
+## Результат
 
----
+- Снижение ручного труда при работе с данными
+- Ускорение аналитики и принятия решений
+- Доступность данных для нетехнических пользователей
 
-### ⚙️ Технологии
+## Демо
 
-**Backend / Core:**  
-Python (async processing, pipelines)
+[![Demo Preview](./assets/preview.png)](https://www.youtube.com/watch?v=o1llLmzHkks)
 
-**AI / LLM:**  
-LangChain, RAG, Embeddings
-
-**Обработка данных:**  
-Pandas, SQL
-
-**Векторное хранилище:**  
-ChromaDB
-
-**Интерфейс:**  
-Streamlit
-
-**Архитектура:**  
-Мультиагентная система, оркестратор
-
----
-
-### 🏗️ Архитектура
-
-```text
-Пользователь → Оркестратор → Агенты → Данные → Ответ
-````
+> Нажми на изображение, чтобы посмотреть демо
 
 ---
 
-### 🤖 Мультиагентная архитектура
-
-* Classifier Agent — определение типа запроса
-* Query Refiner — нормализация запроса
-* RAG Agent — работа с документами
-* SQL Generator — генерация SQL
-* Debugger — исправление ошибок
-* Chart Agent — построение графиков
-* ECharts Agent — визуализация
-* Security Agent — проверка безопасности
-
----
-
-### 🎥 Демо
-
-<p align="center">
-  <a href="https://www.youtube.com/watch?v=o1llLmzHkks">
-    <img src="./assets/preview.png" alt="Demo Preview" width="70%" />
-  </a>
-</p>
-
-<p align="center">
-  <sub>Нажми на изображение, чтобы посмотреть демо</sub>
-</p>
-
----
-
-### Результат
-
-* снижение ручного труда
-* ускорение работы с данными
-* повышение эффективности принятия решений
-
----
-
-### Примечание
-
-Проект представлен в обобщенном виде без раскрытия конфиденциального внутреннего содержимого.
+*Проект представлен в обобщённом виде без раскрытия конфиденциального внутреннего содержимого.*
 
 </details>
 
@@ -125,114 +80,74 @@ Streamlit
 <details>
 <summary>🇬🇧 English</summary>
 
-### 🚀 Overview
+> Production-ready AI system for workflow automation using LLM and multi-agent architecture
 
-Digital AI Assistant is a platform for automating knowledge work across documents, tables, and databases using natural
-language.
+## Overview
+
+A platform for automating knowledge work across documents, tables, and databases using natural language.
 
 It combines LLMs, RAG, and a multi-agent architecture to enable users to interact with data without writing code or SQL.
 
----
+## Problem → Solution
 
-### 💡 Problem
+| Problem | Solution |
+|---|---|
+| Data work requires technical expertise | Natural language queries |
+| Manual document analysis is time-consuming | RAG pipeline with automated processing |
+| Hard to extract insights from multiple sources | Multi-agent data aggregation |
+| High entry barrier for non-technical users | Intuitive chat interface |
 
-* working with data requires technical expertise
-* manual document analysis is time-consuming
-* difficult to extract insights from multiple sources
-* high entry barrier for non-technical users
+## Capabilities
 
----
+- **RAG** — document understanding (PDF, Excel, text)
+- **Text-to-SQL** — natural language to SQL generation
+- **Summarization and analysis**
+- **Multi-source** — aggregate data from various systems
+- **Visualization** — charts and dashboards
+- **Personalized assistants** per use case
 
-### ✅ Solution
+## Architecture
 
-An intelligent assistant that:
-
-* understands natural language queries
-* processes documents (PDF, Excel, text)
-* generates SQL queries
-* aggregates data from multiple sources
-* produces reports and insights
-
----
-
-### 🧠 Core Capabilities
-
-* RAG-based document understanding
-* natural language → SQL
-* summarization and analysis
-* multi-source data integration
-* personalized AI assistants
-* data visualization
-
----
-
-### ⚙️ Tech Stack
-
-**Backend / Core:**
-Python (async processing, pipelines)
-
-**AI / LLM:**
-LangChain, RAG, Embeddings
-
-**Data Processing:**
-Pandas, SQL
-
-**Vector Storage:**
-ChromaDB
-
-**Interface:**
-Streamlit
-
-**Architecture:**
-Multi-agent system, orchestrator pattern
-
----
-
-### 🏗️ Architecture
-
-```text
-User → Orchestrator → Agents → Data → Response
+```
+User
+  ↓
+Orchestrator
+  ├── Classifier Agent     — request classification
+  ├── Query Refiner        — query normalization
+  ├── RAG Agent            — document-based reasoning
+  ├── SQL Generator        — NL → SQL
+  ├── Debugger             — error correction
+  ├── Chart Agent          — visualization
+  ├── ECharts Agent        — dashboards
+  └── Security Agent       — validation
+  ↓
+Response
 ```
 
----
+## Tech Stack
 
-### 🤖 Multi-Agent Architecture
+| Layer | Technologies |
+|---|---|
+| Backend / Core | Python (async processing, pipelines) |
+| AI / LLM | LangChain, RAG, Embeddings |
+| Data Processing | Pandas, SQL |
+| Vector Storage | ChromaDB |
+| Interface | Streamlit |
 
-* Classifier Agent — request classification
-* Query Refiner — query normalization
-* RAG Agent — document-based reasoning
-* SQL Generator — NL → SQL
-* Debugger — error correction
-* Chart Agent — visualization
-* ECharts Agent — dashboards
-* Security Agent — validation
+## Impact
 
----
+- Reduced manual work in data operations
+- Faster analytics and decision-making
+- Data accessibility for non-technical users
 
-### 🎥 Demo
+## Demo
 
-<p align="center">
-  <a href="https://www.youtube.com/watch?v=o1llLmzHkks">
-    <img src="./assets/preview.png" alt="Demo Preview" width="70%" />
-  </a>
-</p>
+[![Demo Preview](./assets/preview.png)](https://www.youtube.com/watch?v=o1llLmzHkks)
 
-<p align="center">
-  <sub>Click the image to watch the demo</sub>
-</p>
+> Click the image to watch the demo
 
 ---
 
-### Impact
-
-* reduced manual work
-* faster data access
-* improved productivity
-
----
-
-### Notes
-
-This project is presented in a generalized form without disclosing confidential internal content.
+*This project is presented in a generalized form without disclosing confidential internal content.*
 
 </details>

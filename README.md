@@ -1,87 +1,164 @@
-# Sergey Velichko  
-**Head of AI & Digital Transformation | AI / LLM Systems | Fullstack Architect**
+# Sergey Velichko
+
+**Head of AI & Digital Transformation**  
+AI / LLM Systems · Fullstack Architecture · Data-Driven Automation
 
 ---
 
-## 🚀 About
+<details open>
+<summary>🇷🇺 Русский</summary>
 
-I design and build AI-driven systems end-to-end — from data pipelines and architecture to production deployment.
+## Чем я занимаюсь
 
-Focused on:
-- LLM applications (RAG, embeddings, semantic search)
-- AI-powered automation of business processes
-- Scalable backend & microservice architectures
-- Fullstack product development (Python + React)
+Я проектирую и создаю **production-системы под ключ** — от архитектуры и моделей данных до API, деплоя, мониторинга и
+интерфейсов.
 
-I combine engineering, architecture, and product thinking to deliver real business impact.
+Работаю на стыке:
 
----
-
-## 🧠 AI / LLM Expertise
-
-- Retrieval Augmented Generation (RAG)
-- Semantic search & embeddings
-- LLM-based classification pipelines
-- Multi-agent LLM systems
-- Vector databases (pgvector, OpenSearch, ChromaDB)
+- AI-систем
+- backend-разработки
+- fullstack-продуктов
+- автоматизации бизнес-процессов
 
 ---
 
-## 🏗️ What I Build
+## Основной фокус
 
-- AI-powered data processing platforms  
-- Text classification & enrichment pipelines  
-- Knowledge retrieval systems (RAG)  
-- Internal automation tools using LLM  
-- High-load backend services  
-
----
-
-## ⚙️ Tech Stack
-
-**Backend:**  
-Python, FastAPI, SQLAlchemy, PostgreSQL, Redis  
-
-**AI / Data:**  
-LLM, RAG, Embeddings, OpenSearch, ChromaDB, pgvector  
-
-**Frontend:**  
-React, TypeScript, Redux  
-
-**Infra & DevOps:**  
-Docker, Nginx, Linux, CI/CD  
-Grafana, Prometheus, Loki  
+- AI / LLM системы (RAG, embeddings, semantic search)
+- масштабируемые backend-архитектуры
+- fullstack-платформы (React + Python)
+- data-intensive системы
+- внутренние корпоративные сервисы
 
 ---
 
-## 🧩 Architecture Focus
+## Портфолио
 
-- Microservices & modular systems  
-- API-first design  
-- Performance optimization & scalability  
-- Observability & monitoring  
-- Clean architecture (DRY / KISS / SRP)  
+Это портфолио содержит реальные production-системы:
 
----
+- AI-платформы и ассистенты
+- внутренние корпоративные системы
+- системы автоматизации процессов
+- fullstack-продукты
 
-## 💼 Experience Highlights
-
-- Designed and delivered production AI/LLM systems  
-- Built full-cycle products: from MVP to scalable services  
-- Led development of data-driven automation solutions  
-- Implemented RAG pipelines and semantic search systems  
-- Integrated AI into real business workflows  
+👉 **[Перейти в каталог проектов](./projects/README.md)**
 
 ---
 
-## 📫 Contact
+## Как читать портфолио
 
-- Email: velichko.sergey.a@gmail.com  
-- Location: Europe / Remote  
+- начни с каталога проектов
+- каждый проект описан через:
+    - проблему → решение → архитектуру → эффект
+- выбирай системы по своей предметной области
 
 ---
 
-## ⚡ Philosophy
+## Технологии
 
-Build simple, scalable systems that solve real problems.  
-Avoid overengineering. Focus on impact.
+**Backend**  
+Python, FastAPI, Django DRF, SQLAlchemy, PostgreSQL, Redis
+
+**AI / Data**  
+LLM, RAG, Embeddings, pgvector, OpenSearch, ChromaDB
+
+**Frontend**  
+React, TypeScript, Redux, Vite
+
+**Infra / DevOps**  
+Docker, Linux, Nginx, CI/CD
+
+**Monitoring**  
+Grafana, Prometheus, Loki
+
+---
+
+## Инженерные принципы
+
+- чистая архитектура
+- DRY / KISS / SRP
+- production-first мышление
+- прагматичный подход
+- масштабируемость без оверинжиниринга
+
+</details>
+
+---
+
+<details>
+<summary>🇬🇧 English</summary>
+
+## What I Do
+
+I design and build **production systems end-to-end** — from architecture and data models to APIs, deployment,
+monitoring, and user interfaces.
+
+My work sits at the intersection of:
+
+- AI systems
+- backend engineering
+- fullstack product development
+- business process automation
+
+---
+
+## Core Focus
+
+- AI / LLM systems (RAG, embeddings, semantic search)
+- scalable backend architecture
+- fullstack platforms (React + Python)
+- data-intensive systems
+- internal enterprise tools
+
+---
+
+## Portfolio
+
+This portfolio includes real-world production systems:
+
+- AI platforms and assistants
+- internal enterprise systems
+- automation tools
+- fullstack products
+
+👉 **[Go to Project Catalog](./projects/README.md)**
+
+---
+
+## How to Navigate
+
+- start with the Project Catalog
+- each project includes:
+    - problem → solution → architecture → impact
+- focus on systems relevant to your domain
+
+---
+
+## Tech Stack
+
+**Backend**  
+Python, FastAPI, Django DRF, SQLAlchemy, PostgreSQL, Redis
+
+**AI / Data**  
+LLM, RAG, Embeddings, pgvector, OpenSearch, ChromaDB
+
+**Frontend**  
+React, TypeScript, Redux, Vite
+
+**Infra / DevOps**  
+Docker, Linux, Nginx, CI/CD
+
+**Monitoring**  
+Grafana, Prometheus, Loki
+
+---
+
+## Engineering Principles
+
+- clean architecture
+- DRY / KISS / SRP
+- production-first mindset
+- pragmatic engineering
+- scalability without overengineering
+
+</details>
